@@ -1,0 +1,21 @@
+{
+  "name": "your-app-name",
+  "version": "1.0.0",
+  "description": "Your App Description",
+  "main": "main.js",
+ "scripts": {
+  "start": "electron .",
+  "dist": "node_modules/.bin/electron-builder"
+},
+  "build": {
+    "appId": "com.example.app",
+    "win": {
+      "target": "nsis"
+    },
+    "publish": null
+  },
+  "devDependencies": {
+    "electron": "^33.2.1",
+    "electron-builder": "^your-builder-version"
+  }
+}
